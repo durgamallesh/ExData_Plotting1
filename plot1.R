@@ -15,7 +15,7 @@ plot1 <- function(){
 
   hist(hcd_r$Global_active_power)
 
-  hist(hcd_r$Global_active_power,col="Red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
+  hist(hcd_r$Global_active_power,col="Red",main="Global Active Power",xlab="Global Active Power (kilowatts)",cex.lab=0.75,cex.axis=0.75)
 
   dev.copy(png,filename="plot1.png",width=480,height=480)
 

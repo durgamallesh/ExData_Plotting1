@@ -18,12 +18,12 @@ plot3 <- function(){
   hcd_r$dateTime <- NULL
   par(mar=c(4,4,1,1),mfrow=c(1,1))
   
-  plot(hcd_r$dateTime_1, hcd_r$Sub_metering_1,type="n", ylab="Energy sub metering",xlab="")
+  plot(hcd_r$dateTime_1, hcd_r$Sub_metering_1,type="n", ylab="Energy sub metering",xlab="",cex.lab=0.75,cex.axis=0.75)
   lines(hcd_r$dateTime_1,hcd_r$Sub_metering_1,col="black")
   lines(hcd_r$dateTime_1,hcd_r$Sub_metering_2,col="red")
   lines(hcd_r$dateTime_1,hcd_r$Sub_metering_3,col="blue")
   
-  legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),col=c("black","red","blue"),lwd=1)
+  legend("topright",legend=c("sub_metering_1","sub_metering_2","sub_metering_3"),col=c("black","red","blue"),lwd=1,cex=0.7)
   
   dev.copy(png,filename="plot3.png",width=480,height=480)
 

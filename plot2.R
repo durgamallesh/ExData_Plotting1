@@ -19,7 +19,7 @@ plot2 <- function(){
   
   par(mar=c(4,4,1,1),mfrow=c(1,1))
   
-  plot(hcd_r$dateTime_1, hcd_r$Global_active_power,type="n", ylab="Global Active Power (kilowatts)",xlab="")
+  plot(hcd_r$dateTime_1, hcd_r$Global_active_power,type="n", ylab="Global Active Power (kilowatts)",xlab="",cex.lab=0.75,cex.axis=0.75)
   lines(hcd_r$dateTime_1, hcd_r$Global_active_power)
 
   
